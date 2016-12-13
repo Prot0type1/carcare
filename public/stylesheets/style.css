@@ -1,19 +1,19 @@
-body {
+body
+{
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-#nav {
+
+#nav
+{
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
 
-<<<<<<< HEAD
+
 .jumbotron
 {
-=======
-.jumbotron {
->>>>>>> 0733d4d426ebfb9cc00a82b52219cae9f662fa51
   background-image: url("../img/CarCareJumbo.jpg");
   color: white;
   height: 20em;
@@ -23,15 +23,22 @@ body {
   padding: 0;
   margin: 0;
 }
-.div.row {
+
+.div.row
+{
   margin: 2em;
+  text-align: center;
 }
-.div1 {
+
+.div1
+{
   padding: 2em;
   margin: auto;
   text-align: center;
 }
-.div2 {
+
+.div2
+{
   text-align: center;
   height: 50%;
   background-color: black;
@@ -51,7 +58,9 @@ body {
   width: 50%;
   background-color: red;
 }
-#footer {
+
+#footer
+{
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   margin: auto;
