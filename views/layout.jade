@@ -3,5 +3,46 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
   body
+    #nav.navbar.navbar-default.navbar-static-top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') CarCare 
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li(class=(title == 'Home') ? 'active' : null)
+              a(href='/profile') Home
+            li(class=(title == 'About') ? 'active' : null)
+              a(href='/about') About
+          ul.nav.navbar-nav.navbar-right
+            if user
+              li.dropdown
+                a.navbar-avatar.dropdown-toggle(href='#', data-toggle='dropdown')
+                  span #{user.name || user.email} &nbsp;
+                  i.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/profile') Profile
+                  li.divider(role='separator')
+                  li
+                    a(href='/logout') Logout
+            else
+              li(class=(title == 'Log in') ? 'active' : null)
+                a(href='/login') Log-in
+              li(class=(title == 'Register') ? 'active' : null)
+                a(href='/register') Register
+        // /.nav-collapse
     block content
+    
+    #footer
+      .container
+        p
+        | &copy; 2016 |
+        i.fa.fa-github(aria-hidden='true') &nbsp;
+        a(href='#') View Source
