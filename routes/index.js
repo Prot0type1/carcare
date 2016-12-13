@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+<<<<<<< HEAD
 // mongoose connection
 var mongoose = require('mongoose');
 mongoose.connect('localhost:27017/test');
@@ -89,11 +90,20 @@ router.post('/update', function(req,res,next){
     doc.save();
   });
   res.redirect('/');
+=======
+
+router.get('/profile', function(req,res,next){
+      res.render('profile', { title: 'Profile'});
+});
+
+router.get('/register', function(req,res,next){
+      res.render('register', { title: 'Registration'});
+>>>>>>> 0733d4d426ebfb9cc00a82b52219cae9f662fa51
 });
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'CarCare' });
 });
 
 
@@ -101,10 +111,10 @@ router.get('/users', function(req, res, next) {
   res.render('users', { title: 'Home' });
 });
 
-
 router.get('/login', function(req,res,next){
   res.render('login', {title: 'login'});
 });
+<<<<<<< HEAD
 
 router.get('/register', function(req,res,next){
   res.render('register', {title: 'Registration'});
@@ -115,4 +125,6 @@ router.get('/', function(req, res, next) {
 });
 
 
+=======
+>>>>>>> 0733d4d426ebfb9cc00a82b52219cae9f662fa51
 module.exports = router;
