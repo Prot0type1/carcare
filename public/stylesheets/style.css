@@ -1,8 +1,70 @@
-body {
-  padding: 50px;
+body
+{
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#nav
+{
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron
+{
+  background-image: url("../images/carcare.jpg");
+  color: white;
+  height: 20em;
+  background-size: cover;
+  background-position: center;
+  text-align:center;
+  padding: 0;
+  margin: 0;
+}
+
+.div1
+{
+  padding: 2em;
+  margin: auto;
+  text-align: center;
+}
+
+.div2
+{
+  text-align: center;
+  height: 50%;
+  background-color: black;
+  color: white;
+}
+
+.div3
+{
+  float: left;
+  text-align: center;
+  width: 50%;
+  background-color: blue;
+}
+
+.div4
+{
+  float: right;
+  text-align: center;
+  width: 50%;
+  background-color: red;
+}
+
+#footer
+{
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  margin: auto;
+  padding: 10px;
+  background-color: grey;
+  color:white;
+  text-align: center;
+  background-position: bottom;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
