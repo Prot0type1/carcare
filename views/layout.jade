@@ -4,6 +4,7 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Poiret+One')
   body
     #nav.navbar.navbar-default.navbar-static-top
       .container
@@ -17,7 +18,14 @@ html
         #navbar.navbar-collapse.collapse
           ul.nav.navbar-nav
             li(class=(title == 'Home') ? 'active' : null)
-              a(href='/profile') Home
+              a(href='/Home') Home
+            li(class=(title == 'About') ? 'active' : null)
+              a(href='/about') About
+              a(href='/') Home
+            li(class=(title == 'Local') ? 'active' : null)
+              a(href='/local') Local
+            li(class=(title == 'Forum') ? 'active' : null)
+              a(href='/forum') Forum
             li(class=(title == 'About') ? 'active' : null)
               a(href='/about') About
           ul.nav.navbar-nav.navbar-right
@@ -33,7 +41,7 @@ html
                   li
                     a(href='/logout') Logout
             else
-              li(class=(title == 'Log in') ? 'active' : null)
+              li(class=(title == 'login') ? 'active' : null)
                 a(href='/login') Log-in
               li(class=(title == 'Register') ? 'active' : null)
                 a(href='/register') Register
@@ -46,3 +54,6 @@ html
         | &copy; 2016 |
         i.fa.fa-github(aria-hidden='true') &nbsp;
         a(href='#') View Source
+        | &copy; Mario & Braulio. All Rights reserved. 2016
+        
+
